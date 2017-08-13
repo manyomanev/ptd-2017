@@ -21,6 +21,204 @@
 
   <body>
 
+    <div id="hero" class="jumbotron">
+      <div class="container">
+      <!-- Header -->
+        <header class="row">
+          <a href="#" class="site-branding col-lg-3 col-md-3 col-sm-12">
+            <img src="img/logo.svg" alt="Plovdiv Throwdown Logo">
+          </a>
+          <nav class="navbar sticky-top col-lg-9 col-md-9 col-sm-12">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="smoothScroll nav-link" href="#the-event">The Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="smoothScroll nav-link" href="#workouts">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="smoothScroll nav-link" href="#">Leaderboards</a>
+              </li>
+              <li class="nav-item">
+                <a class="smoothScroll nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="smoothScroll nav-link btn btn-primary" href="#">Join</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- Intro -->
+        <div id="intro" class="row">
+          <div id="intro-logo" class="col-12">
+            <img src="img/intro-logo.png" alt="Plovdiv Throwdown">
+          </div>
+          <span id="intro-credits" class="col-12">Event organized by: <a href="#" target="_blank">Move Team</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Highlights -->
+      <div id="highlights" class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="highlight-box">
+            <h3><span>Registration:</span><br/>14 Aug. – 17 Sept. 2017</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="highlight-box">
+            <h3><span>Qualifiers:</span><br/>28 Aug. – 17 Sept. 2017</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="highlight-box">
+            <h3><span>Final:</span><br/>28-29 Oct. 2017</h3>
+          </div>
+        </div>
+      </div>
+      <!-- The Event -->
+      <div id="the-event" class="row content-row">
+        <header class="content-row-header col-12">
+          <h2 class="accent">The Event</h2>
+        </header>
+        <!-- Event Info -->
+        <div class="col-lg-4 col-md-12">
+          <h4>What:</h4>
+          <p>Plovdiv Throwdown is a two-day competition taking place in the beautiful city of Plovdiv. The event is powered by MoVe Team and is taking place for a first year. 96 athletes will earn their spot in the finals, through the online qualifiers. First 32 men from the qualifiers will advance to the finals in RX division, 32 in division Men scaled, 16 women in RX division and 16 in Women scaled division Join us for an event full of spectacular challenges and remarkable athletes that you will not forget! It's going to be an amazing event to compete in or just to attend.</p>
+        </div>
+        <!-- Map -->
+        <div id="event-location" class="col-lg-8 col-md-12">
+        <h4>Where: Rowing Canal, Plovdiv, Bulgaria</h4>
+          <div id="map" style="width: 100%; height: 400px;">
+            <script>
+            function initMap() {
+              var uluru = {lat: 42.148335, lng: 24.716559};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIBqCqfqZnfI47oRgF46tW0j7edz8teo&callback=initMap">
+          </script>
+          </div>
+        </div>
+      </div>
+      <!-- Divisions -->
+      <div id="divisions" class="row content-row">
+        <header class="content-row-header col-12">
+          <h2 class="accent">Divisions</h2>
+        </header>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="highlight-box">
+            <h3 class="accent">RX Men</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+         <div class="highlight-box">
+            <h3 class="accent">RX Women</h3>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="highlight-box">
+             <h3 class="accent">RX Women</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+          <div class="highlight-box">
+             <h3 class="accent">RX Women</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workouts -->
+      <div class="row content-row">
+        <header class="content-row-header col-lg-8 col-md-12">
+          <h2 class="accent">Workouts</h2>
+          <p>There will be three online qualification workouts. After announcing the qualifications, every competitor will have three weeks to submit his score from the three qualification workouts.</p>
+        </header>
+
+        <!-- Workout 1 -->
+        <div id="workout" class="col-12">
+          <div class="row">
+              <div id="workout-info" class="col-lg-4 col-md-12">
+              <h3 class="accent">Workout No.1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ab delectus error, eum, incidunt porro amet, enim iure soluta possimus earum sapiente.</p>
+            </div>
+            <div id="workout-video" class="col-lg-8 col-md-12">
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/bMxwbCAIhOw?ecver=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div><!-- /row -->
+        </div>
+        <!-- Workout 2 -->
+        <div id="workout" class="col-12">
+          <div class="row">
+              <div id="workout-info" class="col-lg-4 col-md-12">
+              <h3 class="accent">Workout No.2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ab delectus error, eum, incidunt porro amet, enim iure soluta possimus earum sapiente.</p>
+            </div>
+            <div id="workout-video" class="col-lg-8 col-md-12">
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/bMxwbCAIhOw?ecver=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div><!-- /row -->
+        </div>
+        <!-- Workout 3 -->
+        <div id="workout" class="col-12">
+          <div class="row">
+              <div id="workout-info" class="col-lg-4 col-md-12">
+              <h3 class="accent">Workout No.3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ab delectus error, eum, incidunt porro amet, enim iure soluta possimus earum sapiente.</p>
+            </div>
+            <div id="workout-video" class="col-lg-8 col-md-12">
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/bMxwbCAIhOw?ecver=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div><!-- /row -->
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+    <div class="jumbotron-fluid">
+      <!-- Join The Competition -->
+      <div id="join">
+        <h3>Join the competition <a href="#" class="btn btn-primary" target="_blank">Register Now!</a></h3>
+      </div>
+    </div> <!-- /jumbotron-fluid -->
+
+    <div class="container">
+      <!-- Event Sponsors -->
+      <!-- <div id="sponsors" class="row content-row">
+        <header class="content-row-header col-12">
+          <h2 class="accent">Event Sponsors</h2>
+        </header>
+      </div> -->
+
+      <!-- Contact -->
+      <!-- <div id="contact" class="row content-row">
+        <header class="content-row-header col-12">
+          <h2 class="accent">Contact Us</h2>
+        </header>
+      </div> -->
+
+      <!-- Footer -->
+      <footer id="main-footer" class="row">
+        <div id="copyright" class="col-lg-6 col-md-6 col-sm-12">
+          <p>Plovdiv Throwdown 2017 – It's all about the community.</p>
+        </div>
+        <div id="footer-credits" class="col-lg-6 col-md-6 col-sm-12">
+          <p>Event organized by <a href="#" target="_blank">Move Team</a></p>
+          <p>Website by <a href="http://manyo.me" target="_blank">manyo.me</a></p>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
